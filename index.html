@@ -603,6 +603,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'UA-1391310-4', { 'anonymize_ip': true });
 </script> -->
+<style>
+/* Hero with full-width photo (proba) */
+.hamali-hero{padding:22px 0 30px;background:#f4f5f6;border-bottom:1px solid #e3e5e7;margin-bottom:30px}
+.hamali-hero__box{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.18);background:#1d2a33}
+.hamali-hero__img{display:block;width:100%;height:clamp(420px,52vw,600px);object-fit:cover;object-position:50% 78%}
+.hamali-hero__box:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,20,30,.72) 0%,rgba(8,20,30,.45) 38%,rgba(8,20,30,0) 62%);pointer-events:none}
+.hamali-hero__text{position:absolute;z-index:1;left:44px;top:50%;transform:translateY(-58%);max-width:560px;color:#fff}
+.hamali-hero .hamali-hero__text h1{color:#fff;font-size:44px;line-height:1.15;font-weight:300;margin:0 0 14px;border:0;padding:0;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+.hamali-hero .hamali-hero__text h1 strong{font-weight:700}
+.hamali-hero__quote{font-size:18px;line-height:1.55;font-style:italic;color:#eef3f6;margin:0 0 22px;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.hamali-hero__quote span{display:block;margin-top:8px;font-size:13px;font-style:normal;font-weight:700;letter-spacing:.03em;color:#c9d6de}
+.hamali-hero .hamali-hero__btn{background:#fff;color:#01506d;font-weight:700;border:0;border-radius:6px;padding:12px 22px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+.hamali-hero .hamali-hero__btn:hover,.hamali-hero .hamali-hero__btn:focus{background:#e9f2f6;color:#01506d}
+@media (max-width:767px){
+ .hamali-hero{padding:0 0 22px;background:#fff;border:0}
+ .hamali-hero .container{padding:0}
+ .hamali-hero__box{border-radius:0;box-shadow:none;background:#fff}
+ .hamali-hero__box:after{display:none}
+ .hamali-hero__img{height:auto;aspect-ratio:4/3;object-position:50% 60%}
+ .hamali-hero__text{position:static;transform:none;max-width:none;padding:18px 16px 0;color:#222}
+ .hamali-hero .hamali-hero__text h1{color:#111;font-size:30px;text-shadow:none;margin-bottom:10px}
+ .hamali-hero__quote{color:#444;font-size:16px;text-shadow:none;margin-bottom:16px}
+ .hamali-hero__quote span{color:#777}
+ .hamali-hero .hamali-hero__btn{background:#01506d;color:#fff;box-shadow:none;display:block;text-align:center}
+ .hamali-hero .hamali-hero__btn:hover{background:#013d54;color:#fff}
+}
+</style>
 	</head>
 	<body>
 
@@ -697,10 +724,9 @@ script.src = target;var elem = document.head;elem.appendChild(script);
 					</div>
 				</div>
 			</header>			<main role="main" class="main">
-				<section class="page-top custom-product">
+				<section class="hamali-hero">
 					<div class="container">
-						<div class="row">
-							<!--<div class="col-sm-8" itemscope itemtype="http://schema.org/VideoObject">
+						<!--<div class="col-sm-8" itemscope itemtype="http://schema.org/VideoObject">
 								<video width="670" height="377" preload="none" poster="https://www.hamali.bg/c-uploads/hamalibg.jpg" controls>
 									<source src="https://www.hamali.bg/c-uploads/hamalibg-vp9.webm" type='video/webm; codecs="vp9, opus"' itemprop="contentUrl" />
 									<source src="https://www.hamali.bg/c-uploads/hamalibg-vp8.webm" type='video/webm; codecs="vp8, vorbis"' />
@@ -716,13 +742,12 @@ script.src = target;var elem = document.head;elem.appendChild(script);
 								<meta itemprop="uploadDate" content="2014-12-10T12:06:00+03:00">
 								<meta itemprop="embedUrl" content="https://www.youtube.com/embed/TZqiWRx9HXo" />
 							</div>-->
-							<div class="col-sm-8">
-								<img src="c-uploads/hamali-front.webp" width="670" fetchpriority="high" height="377" alt="Хамали София" class='img-responsive' style="top:0">
-							</div>
-							<div class="col-sm-4">
+						<div class="hamali-hero__box">
+							<img class="hamali-hero__img" src="c-uploads/hamali-front-1600.webp" srcset="c-uploads/hamali-front-800.webp 800w, c-uploads/hamali-front-1600.webp 1600w" sizes="(max-width: 1199px) 100vw, 1140px" width="1600" height="1200" fetchpriority="high" alt="Хамали София – бусовете на Hamali.BG">
+							<div class="hamali-hero__text">
 								<h1>Добре дошли в <strong>Hamali.BG</strong></h1>
-								<p class="lead">Първата българска фирма за професионално преместване на дома и офиса в страната и чужбина.</p>
-								<a href="https://www.hamali.bg/contacts.html" class="btn btn-primary btn-lg push-bottom">Свържете се с нас!</a> <span class="arrow hlt" style="top: 10px;"></span>
+								<div class="hamali-hero__quote">Първата българска фирма за професионално преместване на дома и офиса в страната и чужбина.<span>Hamali.BG · от 1996 г.</span></div>
+								<a href="https://www.hamali.bg/contacts.html" class="btn btn-lg hamali-hero__btn">Свържете се с нас!</a>
 							</div>
 						</div>
 					</div>
