@@ -629,6 +629,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  .hamali-hero .hamali-hero__btn{background:#01506d;color:#fff;box-shadow:none;display:block;text-align:center}
  .hamali-hero .hamali-hero__btn:hover{background:#013d54;color:#fff}
 }
+.hamali-call{display:none}
+@media (max-width:479px){
+ .hamali-call{display:block;position:absolute;top:55px;right:72px;z-index:2;width:42px;height:34px;line-height:34px;text-align:center;border-radius:4px;background:#01506d;color:#fff !important;font-size:20px}
+ .hamali-call:hover,.hamali-call:focus{background:#013d54;color:#fff;text-decoration:none}
+ .hamali-call i{color:#fff !important}
+ body.sticky-menu-active .hamali-call{top:60px}
+}
 </style>
 	</head>
 	<body>
@@ -678,6 +685,7 @@ script.src = target;var elem = document.head;elem.appendChild(script);
 							</li>
 						</ul>
 					</nav>
+					<a class="hamali-call" href="tel:+35929631233" aria-label="Обадете се: 02 963 1233" onclick="gtag('event','click',{'event_category':'phone'});"><i class="fa fa-phone"></i></a>
 					<button aria-label="Меню" class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
 						<i class="fa fa-bars"></i>
 					</button>
